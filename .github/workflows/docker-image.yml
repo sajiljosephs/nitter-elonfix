@@ -34,7 +34,7 @@ jobs:
           file: ./Dockerfile
           platforms: linux/amd64
           push: true
-          tags: sajiljoseph/nitter:latest,sajiljoseph/nitter-elonfix:${{ github.sha }}
+          tags: sajiljoseph/nitter-elonfix:latest,sajiljoseph/nitter-elonfix:${{ github.sha }}
       - name: Build and push ARM64 Docker image
         uses: docker/build-push-action@v2
         with:
